@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    background-color: #F4F3EC;
+    color: #1F3323;
+}
+
+/* Cabeçalho */
+header{
+    background: linear-gradient(
+        rgba(31,51,35,0.65),
+        rgba(31,51,35,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.3rem;
+}
+
+/* Menu */
+nav{
+    background-color: #63783D;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li{
+    margin: 10px;
+}
+
+nav a{
+    color: #F4F3EC;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #CFE0BC;
+}
+
+/* Banner */
+.banner{
+    text-align: center;
+    background: #7FA653;
+    color: white;
+}
+
+.banner h2{
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+}
+
+/* Seções */
+section{
+    background: white;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 35px;
+    border-radius: 18px;
+    border-left: 8px solid #7FA653;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+section h2{
+    font-family: 'Cormorant Garamond', serif;
+    color: #63783D;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+section p{
+    text-align: justify;
+}
+
+/* Curiosidades */
+#curiosidades{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: #F4F3EC;
+    border-top: 5px solid #7FA653;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h3{
+    color: #63783D;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 10px;
+}
+
+.card p{
+    text-align: center;
+}
+
+/* Rodapé */
+footer{
+    background-color: #1F3323;
+    color: #F4F3EC;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media(max-width:768px){
+
+    header h1{
+        font-size: 2.5rem;
+    }
+
+    header p{
+        font-size: 1rem;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section{
+        margin: 15px;
+        padding: 25px;
+    }
+
+    section h2{
+        font-size: 1.8rem;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
